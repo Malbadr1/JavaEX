@@ -1,31 +1,33 @@
-public class JavaEX1{
+import java.util.Scanner;
+
+class JavaEX1{
 
     public static void mean(){
+        Scanner scanner=new Scanner(System.in);
 
-        int x=19;
+        System.out.println("Enter a number to start with");
 
-        for (int i = 1; i < x; i++) {
-            if (i==3){
-                System.out.println("ka");
-            }
-            else if (i==5){
-                System.out.println(" ching!");
-            }else if (i==9){
-                System.out.println("ka");
-            }else if( i==10){
-                System.out.println("ching!");
-            }else if (i==12){
-                System.out.println("ka");
-            }else if(i==15){
+        int x = scanner.nextInt();
+        System.out.println("enter a number to stop at");
+        int y=scanner.nextInt();
+        for (int i =x; i <= y; i++) {
+            if (i % 15 == 0) {
                 System.out.println("ka-ching!");
-            }else if(i==18){
+
+            } else if (i % 5 == 0) {
+                System.out.println(" ching!");
+
+            } else if (i % 3 == 0) {
                 System.out.println("ka");
-            }else {
-                System.out.println(i);}
+            } else {
+                System.out.println(i);
+            }
         }
     }
+
 
     public static void main(String[] args) {
         mean();
     }
 }
+
