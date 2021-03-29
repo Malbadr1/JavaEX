@@ -2,7 +2,7 @@ public class JavaEX1{
 
     public static void mean(){
 
-        int x=20;
+        int x=19;
 
         for (int i = 1; i < x; i++) {
             if (i==3){
